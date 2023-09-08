@@ -1,0 +1,3 @@
+- Run `just init`
+    - build dockerfile
+    - updates dependencies
