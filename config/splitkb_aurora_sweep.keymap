@@ -93,7 +93,7 @@
         bindings = <
         &trans &trans   &trans   &trans  &trans                                                 &trans &trans   &trans   &trans  &trans
         &trans &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN)    &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans
-        &kp LSHIFT &trans   &trans   &kp LG(RIGHT) &kp LG(LEFT)                                 &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP   &trans
+        &kp LSHIFT &trans   &trans   &kp LG(RIGHT) &kp LG(LEFT)                                 &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP   &kp PRINTSCREEN
                      &trans &trans                      &trans &trans
         >;
         };
