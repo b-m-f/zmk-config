@@ -75,8 +75,8 @@
         bindings = <
         &trans &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0                                          &kp LPAR &kp RPAR &kp TILDE &trans &kp TAB
         &kp BACKSLASH &kp PIPE &kp NUM_4    &kp NUM_5 &kp NUM_6                                 &kp LBRC &kp RBRC &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp GRAVE  
-        &kp LESS_THAN &kp GREATER_THAN &kp NUM_1  &kp NUM_2    &kp NUM_3                       &kp LBKT &kp RBKT &kp SLASH &kp QUESTION &kp EQUAL
-                        &mo 1  &trans                                                           &kp RGUI &mo 3
+        &kp LESS_THAN &kp GREATER_THAN &kp NUM_1  &kp NUM_2    &kp NUM_3                        &kp LBKT &kp RBKT &kp SLASH &kp QUESTION &kp EQUAL
+                        &mo 1  &kp LGUI                                                         &kp LGUI &mo 3
         >;
         };
 
@@ -92,7 +92,7 @@
         tri_layer {
         bindings = <
         &trans &trans   &trans   &trans  &trans                                                 &trans &trans   &trans   &trans  &trans
-        &trans &kp LC(LA(LS(LEFT))) &kp LC(LA(LS(RIGHT))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))    &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans
+        &trans &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN)    &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans
         &kp LSHIFT &trans   &trans   &kp LG(RIGHT) &kp LG(LEFT)                                 &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP   &trans
                      &trans &trans                      &trans &trans
         >;
