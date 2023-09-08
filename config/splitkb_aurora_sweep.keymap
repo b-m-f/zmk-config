@@ -65,7 +65,7 @@
             default_layer {
         bindings = <
         &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U  &kp I    &kp O   &kp P
-        &kp A &kp S &mt LEFT_CONTROL &mt LEFT_GUI F &mt LEFT_ALT G                       &mt RIGHT_ALT H &mt RIGHT_GUI J &mt RIGHT_CONTROL K &kp L &kp QUOT
+        &kp A &kp S &mt LEFT_CONTROL D &mt LEFT_GUI F &mt LEFT_ALT G                       &mt LEFT_ALT H &mt LEFT_GUI J &mt LEFT_CONTROL K &kp L &kp QUOT
         &mt LSFT Z &kp X &kp C &kp V &kp B                  &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
                         &mo 1 &kp BACKSPACE                     &kp SPACE &mo 2
         >;
@@ -74,7 +74,7 @@
             left_layer {
         bindings = <
         &trans &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0                                          &kp LPAR &kp RPAR &kp TILDE &trans &kp TAB
-        &kp BACKSLASH &kp PIPE &kp NUM_4    &kp NUM_5 &kp NUM_6                                 &kp LBRC &kp RBRC &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp GRAVE  
+        &kp BACKSLASH &kp PIPE  &mt LEFT_CONTROL NUM_4 &mt LEFT_GUI NUM_5 &mt LEFT_ALT NUM_6    &mt LEFT_ALT LBRC &mt LEFT_GUI RBRC &mt LEFT_CONTROL SINGLE_QUOTE &kp DOUBLE_QUOTES &kp GRAVE  
         &kp LESS_THAN &kp GREATER_THAN &kp NUM_1  &kp NUM_2    &kp NUM_3                        &kp LBKT &kp RBKT &kp SLASH &kp QUESTION &kp EQUAL
                         &mo 1  &kp ESC                                                          &trans  &mo 3
         >;
@@ -83,7 +83,7 @@
         right_layer {
         bindings = <
         &trans &trans &trans &kp AMPS &kp KMLT                                                  &trans &trans &trans &trans &trans
-        &trans &trans &kp DLLR  &kp PRCT &kp CRRT                                               &kp MINUS &kp PLUS &kp UNDERSCORE &trans &trans 
+        &trans &trans &mt LEFT_CONTROL DLLR  &mt LEFT_GUI PRCT &mt LEFT_ALT CRRT                &mt LEFT_CONTROL MINUS &mt LEFT_GUI PLUS &mt LEFT_CONTROL UNDERSCORE &trans &trans 
         &trans &trans &kp BANG  &kp ATSN &kp HASH                                               &kp COLN  &kp SCLN &trans &trans &trans               
                       &mo 3  &kp ESC                                                            &trans  &mo 2
         >;
