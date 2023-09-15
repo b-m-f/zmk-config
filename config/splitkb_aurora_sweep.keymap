@@ -82,9 +82,9 @@
 
         right_layer {
         bindings = <
-        &trans &trans &trans &kp AMPS &kp KMLT                                                  &trans &trans &trans &trans &trans
+        &trans &trans &trans &kp AMPS &kp KMLT                                                  &kp COLN &kp SCLN &trans &trans &trans
         &trans &trans &kp DLLR  &kp PRCT &kp CRRT                                               &kp MINUS &kp  PLUS &kp UNDERSCORE &trans &trans 
-        &trans &trans &mt LEFT_CONTROL BANG  &mt LEFT_GUI ATSN &mt LEFT_ALT  HASH                                  &mt LEFT_ALT  COLN  &mt LEFT_GUI SCLN &kp LEFT_CONTROL &trans &trans               
+        &trans &trans &mt LEFT_CONTROL BANG  &mt LEFT_GUI ATSN &mt LEFT_ALT  HASH               &kp LEFT_ALT  &kp LEFT_GUI &kp LEFT_CONTROL &trans &trans               
                       &mo 3  &kp ESC                                                            &trans  &mo 2
         >;
         };
