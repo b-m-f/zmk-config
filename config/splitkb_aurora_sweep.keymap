@@ -82,7 +82,7 @@
 
         right_layer {
         bindings = <
-        &bt BT_CLR &trans &trans &kp AMPS &kp KMLT                                                  &kp COLN &kp SCLN &trans &trans &trans
+        &trans &trans &trans &kp AMPS &kp KMLT                                                  &kp COLN &kp SCLN &trans &trans &trans
         &trans &trans &kp DLLR  &kp PRCT &kp CRRT                                               &kp MINUS &kp  PLUS &kp UNDERSCORE &trans &trans 
         &trans &trans &mt LEFT_CONTROL BANG  &mt LEFT_GUI ATSN &mt LEFT_ALT  HASH               &kp LEFT_ALT  &kp LEFT_GUI &kp LEFT_CONTROL &trans &trans               
                       &mo 3  &kp ESC                                                            &kp RET  &mo 2
@@ -91,7 +91,7 @@
 
         tri_layer {
         bindings = <
-        &trans &kp LC(LA(LS(LEFT))) &kp LC(LA(LS(RIGHT))) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN)             &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans
+        &bt BT_CLR &kp LC(LA(LS(LEFT))) &kp LC(LA(LS(RIGHT))) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN)             &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans
         &trans &trans   &trans   &trans  &trans                                                 &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
         &kp LSHIFT &trans   &trans   &kp LG(LEFT) &kp LG(RIGHT)                                 &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP   &kp PRINTSCREEN
                      &trans &trans                      &trans &trans
