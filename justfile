@@ -21,3 +21,6 @@ create-build-output-dir:
     mkdir result
 
 build: create-build-output-dir build-left build-right
+
+generate-visuals:
+  zmk-viewer generate splitkb/aurora/sweep/rev1 -f config/splitkb_aurora_sweep.keymap
