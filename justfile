@@ -16,6 +16,10 @@ build-right:
     podman run -v $PWD/zmk:/zmk -v $PWD/config:/config -e WORKSPACE_DIR=/zmk/app --workdir /zmk/app zmkfirmware/zmk-build-arm:3.2 west build -b nice_nano_v2 -- -DSHIELD=splitkb_aurora_sweep_right -DZMK_CONFIG="/config"
     mv zmk/app/build/zephyr/zmk.uf2 result/right.uf2
 
+build-reset:
+    podman run -v $PWD/zmk:/zmk -v $PWD/config:/config -e WORKSPACE_DIR=/zmk/app --workdir /zmk/app zmkfirmware/zmk-build-arm:3.2 west build -b nice_nano_v2 -- -DSHIELD=settings_reset -DZMK_CONFIG="/config"
+    mv zmk/app/build/zephyr/zmk.uf2 result/reset.uf2
+
 create-build-output-dir:
     -rm -rf result
     mkdir result

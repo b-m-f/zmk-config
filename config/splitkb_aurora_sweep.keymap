@@ -71,7 +71,7 @@
         >;
         };
 
-        left_layer {
+        right_layer {
         bindings = <
         &trans &trans &trans &trans &trans                            &kp LPAR &kp RPAR &kp TILDE &kp PIPE &kp TAB
         &trans &trans &trans &trans &trans                            &kp LBRC &kp RBRC &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &kp GRAVE  
@@ -80,10 +80,10 @@
         >;
         };
 
-        right_layer {
+        left_layer {
         bindings = <
         &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                          &trans &trans &trans &trans &trans 
-        &kp LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                            &trans &trans &trans &trans &trans 
+        &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                            &trans &trans &trans &trans &trans 
         &mt LEFT_ALT BACKSLASH &mt LEFT_GUI NUMBER_0 &mt LEFT_CONTROL NUMBER_1 &kp NUMBER_2 &kp NUMBER_3       &trans &trans &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL
         &mo 3  &kp ESC                                                                         &kp RET  &mo 2
         >;
