@@ -66,7 +66,7 @@
         bindings = <
         &kp Q &kp W &kp E &kp R &kp T                                                     &kp Y &kp U  &kp I    &kp O   &kp P
         &mt LSFT A &kp S &kp D &kp F &kp G                                                &kp H &kp J &kp K &kp L &mt LSFT SEMICOLON 
-        &mt LEFT_CONTROL Z &mt LEFT_GUI X &mt LEFT_ALT C &kp V &kp B                  &kp N &kp M  &mt LEFT_ALT DOT &mt LEFT_GUI COMMA &mt LEFT_CONTROL EQUAL
+        &mt LEFT_CONTROL Z &mt LEFT_GUI X &mt LEFT_ALT C &kp V &kp B                      &kp N &kp M  &mt LEFT_ALT DOT &mt LEFT_GUI COMMA &mt LEFT_CONTROL EQUAL
         &mo 1 &kp SPACE                                                                   &kp BACKSPACE &mo 2
         >;
         };
@@ -82,17 +82,17 @@
 
         left_layer {
         bindings = <
-        &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                          &trans &trans &trans &trans &trans 
-        &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                            &trans &trans &trans &trans &trans 
+        &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                              &trans &trans &trans &trans &trans 
+        &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                           &trans &trans &trans &trans &trans 
         &mt LEFT_ALT BACKSLASH &mt LEFT_GUI NUMBER_0 &mt LEFT_CONTROL NUMBER_1 &kp NUMBER_2 &kp NUMBER_3       &trans &trans &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL
-        &mo 3  &kp ESC                                                                         &kp RET  &mo 2
+        &mo 3  &kp ESC                                                                                         &kp RET  &mo 2
         >;
         };
 
         tri_layer {
         bindings = <
         &kp LC(LA(LS(LEFT))) &kp LC(LA(LS(RIGHT))) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN) &trans       &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(MINUS)
-        &trans &trans &bt BT_CLR &bt BT_PRV &bt BT_NXT                                            &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LA(BACKSLASH)
+        &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                              &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LA(BACKSLASH)
         &kp LG(UP) &kp LG(LEFT) &kp LG(RIGHT) &trans &trans                                       &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP &kp PRINTSCREEN
         &trans &trans                                                                             &trans &trans
         >;
