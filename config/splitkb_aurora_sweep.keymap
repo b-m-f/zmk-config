@@ -91,9 +91,9 @@
 
         tri_layer {
         bindings = <
-        &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                        &trans &trans &trans &trans   &kp LA(BACKSLASH)
-        &kp LC(LA(LS(LEFT))) &kp LC(LA(LS(RIGHT))) &kp LG(PAGE_UP) &kp LG(PAGE_DOWN) &trans       &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(MINUS)
-        &kp LG(UP) &kp LG(LEFT) &kp LG(RIGHT) &trans &trans                                       &kp K_COPY &kp K_PASTE &kp K_VOL_DN &kp K_VOL_UP &kp PRINTSCREEN
+        &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                        &trans &trans &trans &kp LA(MINUS)   &kp LA(BACKSLASH)
+        &trans &trans &trans &trans &trans                                                        &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(C)
+        &trans &trans &trans &trans &trans                                                        &kp LG(C) &kp LG(V) &kp K_VOL_DN &kp K_VOL_UP &kp LG(LS(NUMBER_4)) 
         &trans &trans                                                                             &trans &trans
         >;
         };
