@@ -73,27 +73,27 @@
 
         right_layer {
         bindings = <
-        &kp LC(LA(DOWN)) &kp LC(LA(UP)) &trans &trans &trans                                                &kp LPAR &kp RPAR &kp TILDE &kp PIPE &kp TAB
-        &kp LC(LA(LEFT)) &kp LC(LA(RIGHT)) &kp LC(LEFT) &kp LC(RIGHT) &kp LG(GRAVE)                            &kp LBRC &kp RBRC &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &kp GRAVE  
-        &kp LEFT_ALT  &kp LEFT_GUI &kp LEFT_CONTROL &trans &trans                                              &kp LBKT &kp RBKT &mt LEFT_ALT SLASH &mt LEFT_GUI QUESTION &kp LEFT_CONTROL
+        &kp LC(LA(DOWN)) &kp LC(LA(UP)) &trans &trans &trans                                                   &trans &trans &trans &trans &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+        &kp LC(LA(LEFT)) &kp LC(LA(RIGHT)) &kp LC(LEFT) &kp LC(RIGHT) &kp LG(GRAVE)                            &kp LEFT &kp DOWN &kp UP &kp RIGHT &mt LSFT DELETE
+        &kp LEFT_ALT  &kp LEFT_GUI &kp LEFT_CONTROL &trans &trans                                              &trans &trans &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL
         &mo 1  &kp ESC                                                                                         &kp RET &mo 3
         >;
         };
 
         left_layer {
         bindings = <
-        &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                              &trans &trans &trans &trans &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
-        &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                           &kp LEFT &kp DOWN &kp UP &kp RIGHT &mt LSFT DELETE
-        &mt LEFT_ALT BACKSLASH &mt LEFT_GUI NUMBER_0 &mt LEFT_CONTROL NUMBER_1 &kp NUMBER_2 &kp NUMBER_3       &trans &trans &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL
+        &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                              &kp LA(P) &kp LA(N) &trans &kp LA(MINUS)   &kp LA(BACKSLASH)
+        &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                           &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(C)
+        &mt LEFT_ALT BACKSLASH &mt LEFT_GUI NUMBER_0 &mt LEFT_CONTROL NUMBER_1 &kp NUMBER_2 &kp NUMBER_3       &kp LG(C) &kp LG(V) &kp K_VOL_DN &kp K_VOL_UP &kp LG(LS(NUMBER_5))
         &mo 3  &kp ESC                                                                                         &kp RET  &mo 2
         >;
         };
 
         tri_layer {
         bindings = <
-        &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                                     &kp LA(P) &kp LA(N) &trans &kp LA(MINUS)   &kp LA(BACKSLASH)
-        &trans &trans &trans &trans &trans                                                                     &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(C)
-        &trans &trans &trans &trans &trans                                                                     &kp LG(C) &kp LG(V) &kp K_VOL_DN &kp K_VOL_UP &kp LG(LS(NUMBER_5)) 
+        &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                                     &kp LPAR &kp RPAR &kp TILDE &kp PIPE &kp TAB
+        &trans &trans &trans &trans &trans                                                                     &kp LBRC &kp RBRC &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &kp GRAVE
+        &trans &trans &trans &trans &trans                                                                     &kp LBKT &kp RBKT &mt LEFT_ALT SLASH &mt LEFT_GUI QUESTION &kp LEFT_CONTROL
         &trans &trans                                                                                          &trans &trans
         >;
         };
