@@ -92,7 +92,7 @@
         tri_layer {
         bindings = <
         &bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                                     &kp LPAR &kp RPAR &kp TILDE &kp PIPE &kp TAB
-        &trans &trans &trans &trans &trans                                                                     &kp LBRC &kp RBRC &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &kp GRAVE
+        &studio_unlock &trans &trans &trans &trans                                                                     &kp LBRC &kp RBRC &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &kp GRAVE
         &trans &trans &trans &trans &trans                                                                     &kp LBKT &kp RBKT &mt LEFT_ALT SLASH &mt LEFT_GUI QUESTION &kp LEFT_CONTROL
         &trans &trans                                                                                          &trans &trans
         >;
