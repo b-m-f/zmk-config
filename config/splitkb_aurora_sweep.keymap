@@ -62,7 +62,7 @@
         bindings = <
         &trans &trans &trans &trans &trans                             &trans &kp LESS_THAN &kp GREATER_THAN &trans &kp TAB
         &kp LSFT &trans &trans &trans &trans                           &trans &kp BACKSLASH &kp TILDE &trans &trans 
-        &trans &trans &trans &trans &trans                             &trans &kp PIPE &kp SLASH &kp DASH &trans
+        &trans &trans &trans &trans &trans                             &trans &kp PIPE &kp SLASH &kp MINUS &trans
         &trans &trans                                                  &kp RETURN &kp ESC
         >;
         };
