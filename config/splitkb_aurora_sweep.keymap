@@ -52,10 +52,10 @@
 
         layer_3 {                           
         bindings = <
-        &trans &trans &kp GRAVE &kp LSFT(NUMBER_9) &kp LSFT(NUMBER_0)     &trans &trans &trans &trans &trans
-        &trans &trans &kp DOUBLE_QUOTE &kp LEFT_BRACE &kp RIGHT_BRACE            &trans &trans &trans &trans &trans 
-        &trans &trans &kp SINGLE_QUOTE &kp LEFT_BRACKET &kp RIGHT_BRACKET        &trans &trans &trans &trans &trans
-        &trans &trans                                                  &trans &trans
+        &trans &trans &kp GRAVE &kp LSFT(NUMBER_9) &kp LSFT(NUMBER_0)            &trans &trans &trans &trans &trans
+        &trans &trans &kp DOUBLE_QUOTES &kp LEFT_BRACE &kp RIGHT_BRACE           &trans &trans &trans &trans &trans 
+        &trans &trans &kp SINGLE_QUOTE &kp LEFT_BRACKET &kp RIGHT_BRACKET       &trans &trans &trans &trans &trans
+        &trans &trans                                                            &trans &trans
         >;
         };
         layer_4 {
