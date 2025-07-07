@@ -82,7 +82,7 @@
         &trans &trans &trans &trans &trans                                 &trans &trans &trans &trans &trans
         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans                           &trans &trans &trans &trans &trans 
         &trans &trans &trans &trans &trans                                 &trans &trans &trans &trans &trans
-        &kp LG(C) &kp LG(V)                                                &kp LG(LS(NUMBER_6)) &trans
+        &kp LG(C) &kp LG(V)                                                &kp LG(LS(NUMBER_5)) &trans
         >;
         };
 
