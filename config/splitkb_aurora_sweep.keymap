@@ -71,7 +71,7 @@
         >;
         };
 
-        layer_1{
+        layer_1 {
         bindings = <
         &kp LC(LA(DOWN)) &kp LC(LA(UP)) &trans &trans &trans                                                   &trans &trans &trans &trans &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
         &kp LC(LA(LEFT)) &kp LC(LA(RIGHT)) &kp LC(LEFT) &kp LC(RIGHT) &kp LG(GRAVE)                            &kp LEFT &kp DOWN &kp UP &kp RIGHT &mt LSFT DELETE
@@ -80,7 +80,7 @@
         >;
         };
 
-        layer_2{
+        layer_2 {
         bindings = <
         &kp MINUS &kp PLUS &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9                                              &kp LA(P) &kp LA(N) &trans &kp LA(MINUS)   &kp LA(BACKSLASH)
         &mt LSFT LESS_THAN &kp GREATER_THAN &kp NUMBER_4 &kp  NUMBER_5 &kp  NUMBER_6                           &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &kp LA(C)
@@ -89,7 +89,7 @@
         >;
         };
 
-        layer_3{
+        layer_3 {
         bindings = <
         &bt bt_clr_all &bt bt_sel 0 &bt bt_sel 1 &bt bt_sel 2 &bt bt_sel 3                                     &kp lpar &kp rpar &kp tilde &kp pipe &kp tab
         &studio_unlock &trans &trans &trans &trans                                                                     &kp lbrc &kp rbrc &kp double_quotes &kp single_quote &kp grave
@@ -97,7 +97,7 @@
         &trans &trans                                                                                          &trans &trans
         >;
         };
-        layer_4{
+        layer_4 {
         bindings = <
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans 
@@ -105,7 +105,7 @@
         &trans &trans                                                  &trans &trans
         >;
         };
-        layer_5{
+        layer_5 {
         bindings = <
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans 
@@ -113,7 +113,7 @@
         &trans &trans                                                  &trans &trans
         >;
         };
-        layer_6{
+        layer_6 {
         bindings = <
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans 
