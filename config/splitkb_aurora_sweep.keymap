@@ -27,7 +27,7 @@
         bindings = <
         &lt 6 Q &kp W &kp E &kp R &kp T                                     &kp Y &kp U &kp I &kp O &lt 3 P
         &mt LSFT A &kp S &kp D &kp F &kp G                                  &mt LSFT SEMICOLON &kp H &kp J &kp K &kp L 
-        &lt 5 Z &mt LEFT_CONTROL X &mt LEFT_GUI C &mt LEFT_ALT V &kp B      &kp N &mt LEFT_ALT M &mt LEFT_GUI DOT &mt LEFT_CTRL COMMA &lt 2 EQUAL
+        &lt 5 Z &mt LEFT_CONTROL X &mt LEFT_GUI C &mt LEFT_ALT V &kp B      &kp N &mt LEFT_ALT M &mt LEFT_GUI DOT &mt LEFT_CONTROL COMMA &lt 2 EQUAL
         &mo 4 &kp SPACE                                                     &kp BACKSPACE &mo 1
         >;
         };
