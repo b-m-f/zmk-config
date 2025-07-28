@@ -15,6 +15,24 @@
 };
 
 / {
+    macros {
+        enter_back_to_base: enter_back_to_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ENTER>
+                , <&to 0>
+                ;
+        };
+        esc_back_to_base: esc_back_to_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ESCAPE>
+                , <&to 0>
+                ;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -55,68 +73,46 @@
              bindings = <&kp RGUI>;
         };
     };
+    #define DEFAULT 0
+    #define NUMBERS 1
+    #define SYMBOLS 2
 
     keymap {
         compatible = "zmk,keymap";
 
+        
         default_layer {
         bindings = <
-        &lt 6 Q &kp W &kp E &kp R &kp T                                     &kp Y &kp U &kp I &kp O &lt 3 P
-        &mt LSFT A &kp S &kp D &kp F &kp G                                  &kp H &kp J &kp K &kp L &mt LSFT SEMICOLON 
-        &lt 5 Z &mt LEFT_CONTROL X &mt LEFT_GUI C &mt LEFT_ALT V &kp B      &kp N &mt LEFT_ALT M &mt LEFT_GUI DOT &mt LEFT_CONTROL COMMA &lt 2 EQUAL
-        &mo 4 &kp SPACE                                                     &kp BACKSPACE &mo 1
+        &kp Q &kp W &kp F &kp P &kp B                                  &kp J &kp L &kp U &kp Y &kp SEMICOLON
+        &kp A &kp R &kp S &kp T &kp G                                  &kp M &kp N &kp E &kp I &kp O
+        &kp Z &kp X &kp C &kp D &kp D                                  &kp K &kp H &kp COMMA &kp DOT &kp SLASH
+        &to NUMBERS &kp SPACE                                          &kp BACKSPACE &to SYMBOLS
         >;
         };
 
-        layer_1 {
+        layer_1_num_layer {
         bindings = <
-        &kp SLASH &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp PLUS          &trans &trans &trans &trans &trans
-        &kp STAR &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp MINUS          &trans &trans &trans &trans &kp LSFT
-        &trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_0         &trans &trans &trans &trans &trans
-        &kp ESC &kp RETURN                                                 &trans &trans
-        >;
-        };
+        &to DEFAULT &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &trans                        &kp BACKSLASH &kp SLASH &kp STAR &kp PERCENT &to DEFAULT
+        &trans      &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp DOT                       &kp TILDE &kp PLUS &kp MINUS &kp EQUAL &trans 
+        &trans      &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp COMMA                     &kp PIPE &kp LT &kp GT &kp QUESTION &trans
+        &trans &kp NUMBER_0                                                              &enter_back_to_base &kp TAB
 
-        layer_2 {
-        bindings = <
-        &trans &trans &trans &trans &trans                                 &trans &trans &trans &trans &trans
-        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans                           &trans &trans &trans &trans &trans 
-        &trans &trans &trans &trans &trans                                 &trans &trans &trans &trans &trans
-        &kp LG(C) &kp LG(V)                                                &kp LG(LS(NUMBER_5)) &trans
+        // &kp SLASH &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp PLUS          &trans &trans &trans &trans &trans
+        // &kp STAR &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp MINUS          &trans &trans &trans &trans &kp LSFT
+        // &trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_0         &trans &trans &trans &trans &trans
+        // &kp ESC &kp RETURN                                                 &trans &trans
         >;
         };
+        layer_2_symbol_layer {
+        bindings = <
+        &to DEFAULT &trans   &kp LS(NUMBER_9) &kp LS(NUMBER_0)   &kp GRAVE                  &trans &trans &kp UP &trans &to DEFAULT
+        &trans &trans        &kp LEFT_BRACE &kp RIGHT_BRACE      &kp DOUBLE_QUOTES          &trans &kp LEFT &kp DOWN &kp RIGHT &trans 
+        // TODO: navigation for TMUX and VIM
+        &trans &trans        &kp LEFT_BRACKET &kp RIGHT_BRACKET  &kp SINGLE_QUOTE           &trans &trans &trans &trans &trans
+        &esc_back_to_base &kp LG(C)                                                         &kp LG(V) &trans
 
-        layer_3 {                           
-        bindings = <
-        &trans &trans &kp GRAVE &kp LS(NUMBER_9) &kp LS(NUMBER_0)            &trans &trans &trans &trans &trans
-        &trans &trans &kp DOUBLE_QUOTES &kp LEFT_BRACE &kp RIGHT_BRACE           &trans &trans &trans &trans &trans 
-        &trans &trans &kp SINGLE_QUOTE &kp LEFT_BRACKET &kp RIGHT_BRACKET       &trans &trans &trans &trans &trans
-        &trans &trans                                                            &trans &trans
         >;
         };
-        layer_4 {
-        bindings = <
-        &trans &trans &trans &trans &trans                             &trans &kp LESS_THAN &kp GREATER_THAN &trans &kp TAB
-        &kp LSFT &trans &trans &trans &trans                           &trans &kp BACKSLASH &kp TILDE &trans &trans 
-        &trans &trans &trans &trans &trans                             &trans &kp PIPE &kp SLASH &kp MINUS &trans
-        &trans &trans                                                  &kp RETURN &kp ESC
-        >;
-        };
-        layer_5 {
-        bindings = <
-        &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans 
-        &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
-        &trans &trans                                                  &trans &trans
-        >;
-        };
-        layer_6 {
-        bindings = <
-        &trans &studio_unlock &trans &trans &trans                     &trans &trans &trans &trans &trans
-        &bt BT_CLR_ALL &trans &trans &trans &trans                     &trans &trans &trans &trans &trans 
-        &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans
-        &bt BT_NXT &bt BT_PRV                                          &trans &trans
-        >;
         };
     };
 };
